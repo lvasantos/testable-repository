@@ -1,11 +1,13 @@
 import SwiftUI
 
-struct ExerciseViewCell: View {
+struct ExerciseCellView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @State var exercise: Exercise
 
     @State var editToggle = false
+
+    @State var deleteAlert = false
 
     var body: some View {
         NavigationView {
@@ -34,7 +36,7 @@ struct ExerciseViewCell: View {
                         Divider()
                         // PRECISA DE UM ALERT PARA DELETAR
                         Button {
-                            deleteExercise()
+                            deleteAlert.toggle()
                         } label: {
                             Spacer()
                             Text("Delete")
@@ -47,6 +49,11 @@ struct ExerciseViewCell: View {
             }
             .sheet(isPresented: $editToggle) {
                 UpdateExerciseView(exercise: exercise, editToggle: $editToggle)
+            }
+            .alert(isPresented: $deleteAlert) {
+                Alert(title: Text("Are you sure?"), primaryButton: .destructive(Text("Delete")) {
+                    deleteExercise()
+                }, secondaryButton: .cancel())
             }
             .navigationTitle(Text(exercise.name ?? ""))
         }

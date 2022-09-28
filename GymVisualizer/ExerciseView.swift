@@ -15,14 +15,13 @@ struct ExerciseView: View {
             VStack {
                 List {
                     ForEach(exercises, id: \.self) { exercise in
-                        NavigationLink(destination: ExerciseViewCell(exercise: exercise)) {
+                        NavigationLink(destination: ExerciseCellView(exercise: exercise)) {
                             Text(exercise.name!)
                             }
                             .sheet(isPresented: $isPresented, content: {
                                 AddExerciseView(exercise: exercise, isPresented: $isPresented)
                             })
                     }
-//                    .onDelete(perform: deleteExercise)
                 }
                 .listStyle(.insetGrouped)
             }
@@ -42,11 +41,4 @@ struct ExerciseView: View {
             }
         }
     }
-//    private func deleteExercise(offsets: IndexSet) {
-//        withAnimation {
-//            offsets.map { exercises[$0] }.forEach(viewContext.delete)
-//
-//            PersistenceController.saveState(viewContext)
-//        }
-//    }
 }

@@ -13,7 +13,7 @@
 		EEFE487D28E33003004D4513 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEFE487C28E33003004D4513 /* Preview Assets.xcassets */; };
 		EEFE487F28E33003004D4513 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE487E28E33003004D4513 /* Persistence.swift */; };
 		EEFE488228E33003004D4513 /* GymVisualizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEFE488028E33003004D4513 /* GymVisualizer.xcdatamodeld */; };
-		EEFE488D28E33AF6004D4513 /* ExerciseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE488C28E33AF6004D4513 /* ExerciseViewCell.swift */; };
+		EEFE488D28E33AF6004D4513 /* ExerciseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE488C28E33AF6004D4513 /* ExerciseCellView.swift */; };
 		EEFE488F28E33C0A004D4513 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE488E28E33C0A004D4513 /* AddExerciseView.swift */; };
 		EEFE489128E33F3C004D4513 /* UpdateExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE489028E33F3C004D4513 /* UpdateExerciseView.swift */; };
 /* End PBXBuildFile section */
@@ -26,7 +26,7 @@
 		EEFE487C28E33003004D4513 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEFE487E28E33003004D4513 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EEFE488128E33003004D4513 /* GymVisualizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymVisualizer.xcdatamodel; sourceTree = "<group>"; };
-		EEFE488C28E33AF6004D4513 /* ExerciseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewCell.swift; sourceTree = "<group>"; };
+		EEFE488C28E33AF6004D4513 /* ExerciseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellView.swift; sourceTree = "<group>"; };
 		EEFE488E28E33C0A004D4513 /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
 		EEFE489028E33F3C004D4513 /* UpdateExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +65,7 @@
 				EEFE489528E36591004D4513 /* Routine */,
 				EEFE489428E35C93004D4513 /* Exercise */,
 				EEFE487728E33002004D4513 /* ExerciseView.swift */,
-				EEFE488C28E33AF6004D4513 /* ExerciseViewCell.swift */,
+				EEFE488C28E33AF6004D4513 /* ExerciseCellView.swift */,
 				EEFE488E28E33C0A004D4513 /* AddExerciseView.swift */,
 				EEFE489028E33F3C004D4513 /* UpdateExerciseView.swift */,
 				EEFE487928E33003004D4513 /* Assets.xcassets */,
@@ -168,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEFE488D28E33AF6004D4513 /* ExerciseViewCell.swift in Sources */,
+				EEFE488D28E33AF6004D4513 /* ExerciseCellView.swift in Sources */,
 				EEFE487F28E33003004D4513 /* Persistence.swift in Sources */,
 				EEFE488228E33003004D4513 /* GymVisualizer.xcdatamodeld in Sources */,
 				EEFE487828E33002004D4513 /* ExerciseView.swift in Sources */,
